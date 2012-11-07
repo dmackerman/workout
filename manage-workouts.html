@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Workout App Prototype</title>
+    <title>Manage App Prototype</title>
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -22,6 +22,7 @@
 
     <!-- Include the compiled Ratchet JS -->
     <script src="ratchet.js"></script>
+    <script src="zepto.js"></script>
 
     <script type="text/javascript" src="//use.typekit.net/cta5lqr.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>    
@@ -39,41 +40,16 @@
 
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
-    <a class="button-prev" href="index.html" data-ignore="push">Back</a>    
-    <h1 class="title">My Workouts</h1>
-    <a class="button" href="manage-workouts.html" data-ignore="push">Manage</a>    
+    <a class="button" href="index.html" data-ignore="push">Close</a>
+    <h1 class="title">Manage Workouts</h1>
   </header>
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
-      <ul class="list">
-        <li class="list-divider">Today is <strong>Monday</strong>, November 14th</li>
-        <li>
-          <a href="single-workout.html" data-ignore="push">
-            <strong>Back / Biceps</strong>
-            <span class="count-main">TODAY</span>
-            <span class="chevron"></span>
-          </a>
-        </li>
-        <li>
-          <a href="single-workout.html" data-ignore="push">
-            <strong>Chest / Triceps</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>
-        <li>
-          <a href="single-workout.html">
-            <strong>Shoulders / Back</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>
-        <li>
-          <a href="single-workout.html" data-ignore="push">
-            <strong>Abs / Cardio</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>                         
-      </ul>
+    <div class="content-padded">
+      <p class="welcome">Manage workouts here. This is the same screen you get to from the home screen</p>
+      <p class="welcome">This is a pop-up over any existing screen, hence the close button.</p>
+    </div>
   </div>
 
   </body>
