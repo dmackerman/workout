@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Manage App Prototype</title>
+    <title>Workout App Prototype</title>
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -25,14 +25,13 @@
     <script src="zepto.js"></script>
 
     <script type="text/javascript" src="//use.typekit.net/cta5lqr.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>    
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <!-- Intro paragraph styles. Delete once you start using this page -->
     <style type="text/css">
         .welcome {
           line-height: 1.5;
           color: #555;
-          margin-bottom: 20px;
         }
     </style>
 
@@ -41,37 +40,44 @@
 
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
-    <a class="button-prev" href="manage-workouts.html" data-ignore="push">Manage</a>
-    <h1 class="title">Back / Biceps</h1>
+    <a class="button-prev" href="single-workout.html" data-ignore="push">Back</a>    
+    <h1 class="title">Add Exercise</h1>
   </header>
+
+
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
-    <ul class="list">
-        <li>
-            <strong>Bench Press</strong>
-            <a class="button-negative">Remove</a>
-        </li>
-        <li>
-            <strong>Skullcruchers</strong>
-            <a class="button-negative">Remove</a>
-        </li>        
-        <li>
-            <strong>Decline Bench Press</strong>
-            <a class="button-negative">Remove</a>
-        </li>                
-        <li>
-            <strong>Tricep Pushdown</strong>
-            <a class="button-negative">Remove</a>
-        </li>
-        <li>
-            <strong>Close Grip Bench Press</strong>
-            <a class="button-negative">Remove</a>
-        </li>   
-      </ul>    
+      <ul class="list">
+        <li class="list-divider">You are adding a new exercise to the "Back / Bicep" workout.</li>
+      </ul>
       <div class="content-padded">
-        <a href="add-new-exercise.html" data-ignore="push" class="button-positive button-block">Add Exercise</a>
-      </div>          
+      <form>
+        <div class="input-group">
+          <div class="input-row">
+            <select>
+              <option>Strength</option>
+              <option>Cardio</option>
+            </select>
+          </div>
+          <div class="input-row">
+            <input type="email" placeholder="Name">
+          </div>
+          <div class="input-row">
+            <input type="text" placeholder="Additional Notes">
+          </div>
+        </div>
+      </form>  
+      <a style="margin-bottom: 0;" href="manage-single-workout.html" data-ignore="push" class="button-positive button-block">Add Exercise</a>      
+      </div>
   </div>
+
+  <script>
+    Zepto(function($){
+      $('#startTimer').on('click', function(e) {
+        alert('timer started');
+      })
+    })
+  </script>
   </body>
 </html>
