@@ -36,34 +36,20 @@
 
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
-    <h1 class="title">Workout Tracker</h1>
+    <a class="button-prev" href="index.html" data-transition="fade">Back</a>    
+    <h1 class="title">New Workout</h1>
   </header>
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
     <div class="content-padded">
-      <p class="welcome"><strong>Your workouts</strong></p>
-
-      <ul class="list inset">
-        <li>
-          <a href="workouts.html" data-transition="slide-in">
-            <strong>Workout #1</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>
-        <li>
-          <a href="workouts.html" data-transition="slide-in">
-            <strong>Workout #2</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>
-      </ul>      
-
-      <a href="new-workout.html" data-transition="fade" class="button-positive button-block">Create New Workout</a>
+      <form>
+        <input type="text" placeholder="Workout Name">
+        <input type="search" placeholder="Search">
+        <textarea rows="5"></textarea>
+        <a class="button button-block button-positive">Create Workout</a>
+      </form>
     </div>
-
-
-
   </div>
 
   </body>

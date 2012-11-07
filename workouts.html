@@ -36,34 +36,58 @@
 
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
-    <h1 class="title">Workout Tracker</h1>
+    <a class="button-prev" href="index.html" data-transition="slide-out">Back</a>    
+    <h1 class="title">Workout #1</h1>
   </header>
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
-    <div class="content-padded">
-      <p class="welcome"><strong>Your workouts</strong></p>
-
-      <ul class="list inset">
+      <ul class="list">
+        <li class="list-divider">Today is <strong>Monday</strong>, November 14th</li>
         <li>
-          <a href="workouts.html" data-transition="slide-in">
-            <strong>Workout #1</strong>
+          <a href="single-workout.html" data-transition="slide-in">
+            <strong class="disabled">Sunday</strong>
             <span class="chevron"></span>
           </a>
         </li>
         <li>
-          <a href="workouts.html" data-transition="slide-in">
-            <strong>Workout #2</strong>
+          <a href="single-workout.html" data-transition="slide-in">
+            <strong>Monday</strong>
+            <span class="count">TODAY</span>
             <span class="chevron"></span>
           </a>
         </li>
-      </ul>      
-
-      <a href="new-workout.html" data-transition="fade" class="button-positive button-block">Create New Workout</a>
-    </div>
-
-
-
+        <li>
+          <a href="">
+            <strong class="disabled">Tuesday</strong>
+            <span class="chevron"></span>
+          </a>
+        </li>
+        <li>
+          <a href="single-workout.html" data-transition="slide-in">
+            <strong>Wednesday</strong>
+            <span class="chevron"></span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <strong class="disabled">Thursday</strong>
+            <span class="chevron"></span>
+          </a>
+        </li>
+        <li>
+          <a href="single-workout.html" data-transition="slide-in">
+            <strong>Friday</strong>
+            <span class="chevron"></span>
+          </a>
+        </li> 
+        <li>
+          <a href="">
+            <strong class="disabled">Saturday</strong>
+            <span class="chevron"></span>
+          </a>
+        </li>                             
+      </ul>
   </div>
 
   </body>
