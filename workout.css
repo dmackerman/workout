@@ -34,6 +34,10 @@ input.reps {
   margin-right: 5px;
 }
 
+input#new {
+  margin: 0 !important;
+}
+
 input.weight {
   width: 60%;
 }

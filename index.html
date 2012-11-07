@@ -22,6 +22,7 @@
 
     <!-- Include the compiled Ratchet JS -->
     <script src="ratchet.js"></script>
+    <script src="zepto.js"></script>
 
     <script type="text/javascript" src="//use.typekit.net/cta5lqr.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>    
@@ -41,9 +42,6 @@
   <header class="bar-title">
     <h1 class="title">Workout Tracker</h1>
   </header>
-  <footer class="bar-title bottom">
-    <h1 class="title">Workout Tracker</h1>
-  </footer>
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
@@ -64,14 +62,19 @@
       </ul>      
 
       <div class="content-padded">
-        <a href="new-workout.html" data-transition="fade" class="button-positive button-block">Create New Workout</a>
+        <a id="createNewWorkout" class="button-positive button-block">Create New Workout</a>
         <a href="#" data-transition="fade" class="button button-block">View Logs</a>
       </div>
-
-
-
-
   </div>
+
+  <script>
+    Zepto(function($){
+      $('#createNewWorkout').on('click', function(e) {
+        $('.list').append('<li style="padding:10px;"><input id="new" type="text" placeholder="name" /></li>');
+      })
+      $('#new').focus();
+    })
+  </script>
 
   </body>
 </html>
