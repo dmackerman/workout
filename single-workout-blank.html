@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -23,11 +23,16 @@
     <!-- Include the compiled Ratchet JS -->
     <script src="ratchet.js"></script>
 
+    <script type="text/javascript" src="//use.typekit.net/cta5lqr.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
     <!-- Intro paragraph styles. Delete once you start using this page -->
     <style type="text/css">
         .welcome {
           line-height: 1.5;
           color: #555;
+          margin-bottom: 10px;
+          font-size: 11px;
         }
     </style>
 
@@ -36,19 +41,15 @@
 
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
-    <a class="button-prev" href="index.html" data-transition="fade">Back</a>    
-    <h1 class="title">New Workout</h1>
+    <a class="button-prev" href="workouts.html" data-transition="slide-out">Back</a>    
+    <h1 class="title">Monday</h1>
+    <a class="button" href="#" data-transition="fade">Edit</a>  
   </header>
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
-    <div class="content-padded">
-      <form>
-        <input type="text" placeholder="Workout Name">
-        <textarea rows="2" placeholder="Additional Notes"></textarea>
-        <a href="index.html" data-transition="fade" class="button button-block button-positive">Create Workout</a>
-      </form>
-    </div>
+ 
+  
   </div>
 
   </body>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -24,13 +24,15 @@
     <script src="ratchet.js"></script>
 
     <script type="text/javascript" src="//use.typekit.net/cta5lqr.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>    
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <!-- Intro paragraph styles. Delete once you start using this page -->
     <style type="text/css">
         .welcome {
           line-height: 1.5;
           color: #555;
+          margin-bottom: 10px;
+          font-size: 11px;
         }
     </style>
 
@@ -39,57 +41,47 @@
 
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
-    <a class="button-prev" href="index.html" data-transition="slide-out">Back</a>    
-    <h1 class="title">Workout #1</h1>
+    <a class="button-prev" href="workouts.html" data-transition="slide-out">Back</a>    
+    <h1 class="title">Monday</h1>
+    <a class="button" href="single-workout.html" data-transition="fade">Done</a>  
   </header>
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
+      <div class="content-padded">
+        <a href="#" data-transition="fade" class="button-positive button-block">Add Exercise</a>                   
+      </div>
       <ul class="list">
-        <li class="list-divider">Today is <strong>Monday</strong>, November 14th</li>
         <li>
-          <a href="single-workout.html" data-transition="slide-in">
-            <strong class="disabled">Sunday</strong>
-            <span class="chevron"></span>
+          <a href="single-exercise.html" data-transition="slide-in">
+            <strong>Bench Press</strong>
+            <a class="button-negative">Remove</a>
           </a>
         </li>
         <li>
-          <a href="single-workout.html" data-transition="slide-in">
-            <strong>Monday</strong>
-            <span class="count">TODAY</span>
-            <span class="chevron"></span>
+          <a href="single-exercise.html" data-transition="slide-in">
+            <strong>Skullcruchers</strong>
+            <a class="button-negative">Remove</a>
+          </a>
+        </li>        
+        <li>
+          <a href="single-exercise.html" data-transition="slide-in">
+            <strong>Decline Bench Press</strong>
+            <a class="button-negative">Remove</a>
+          </a>
+        </li>                
+        <li>
+          <a href="single-exercise.html" data-transition="slide-in">
+            <strong>Tricep Pushdown</strong>
+            <a class="button-negative">Remove</a>
           </a>
         </li>
         <li>
-          <a href="">
-            <strong class="disabled">Tuesday</strong>
-            <span class="chevron"></span>
+          <a href="single-exercise.html" data-transition="slide-in">
+            <strong>Close Grip Bench Press</strong>
+            <a class="button-negative">Remove</a>
           </a>
-        </li>
-        <li>
-          <a href="single-workout.html" data-transition="slide-in">
-            <strong>Wednesday</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <strong class="disabled">Thursday</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>
-        <li>
-          <a href="single-workout.html" data-transition="slide-in">
-            <strong>Friday</strong>
-            <span class="chevron"></span>
-          </a>
-        </li> 
-        <li>
-          <a href="">
-            <strong class="disabled">Saturday</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>                             
+        </li>   
       </ul>
   </div>
 

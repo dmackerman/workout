@@ -1,3 +1,7 @@
+body {
+  font: 14px/1.25 "proxima-nova", "Helvetica Neue", sans-serif;
+}
+
 .disabled {
   color: #b0b0b0;
 }
@@ -11,6 +15,11 @@
   color: #0F920F;
   text-align: center;
   padding: 7px 0;  
+}
+
+.bar-title.bottom {
+  bottom: 0;
+  top: auto;
 }
 
 input.reps, input.weight {
