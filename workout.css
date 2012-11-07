@@ -4,3 +4,27 @@
 [class*="count"] {
   margin-right: 20px;
 }
+
+.list .list-divider.notification {
+  background: rgba(0, 255, 0, .2);
+  border-bottom: none;
+  color: #0F920F;
+  text-align: center;
+  padding: 7px 0;  
+}
+
+input.reps, input.weight {
+  text-align: center;
+  font-size: 17px;
+  padding: 30px;
+  font-weight: bold;  
+}
+
+input.reps {
+  width: 37%;
+  margin-right: 5px;
+}
+
+input.weight {
+  width: 60%;
+}

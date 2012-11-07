@@ -40,25 +40,21 @@
     <h1 class="title">Bench Press</h1>
   </header>
 
+
+
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
       <ul class="list">
+        <li class="list-divider notification">Your data has been saved!</li>
         <li class="list-divider">Set #1</li>
       </ul>
       <div class="content-padded">
         <form>
-          <input type="number" placeholder="Enter reps">
-        </form>
-      </div>
-      <ul class="list">
-        <li class="list-divider">Set #2</li>
-      </ul>
-      <div class="content-padded">
-        <form>
-          <input type="number" placeholder="Enter reps">
+          <input class="reps" maxlength="3" type="text" placeholder="Reps">
+          <input class="weight" type="text" placeholder="Weight">
           <a class="button-main button-block">Add Set</a>
         </form>
-      </div>      
+      </div>
   </div>
 
   </body>
