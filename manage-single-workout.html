@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Workout App Prototype</title>
+    <title>Manage App Prototype</title>
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -32,6 +32,7 @@
         .welcome {
           line-height: 1.5;
           color: #555;
+          margin-bottom: 20px;
         }
     </style>
 
@@ -40,18 +41,47 @@
 
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
-    <h1 class="title">No Bullshit Tracker</h1>
+    <a class="button-prev" href="manage-workouts.html" data-ignore="push">Manage</a>
+    <h1 class="title">Back / Biceps</h1>
   </header>
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
-    <div class="content-padded">
-      <a href="workouts.html" data-ignore="push" class="button-main button-block">Workout</a>
-      <a href="manage-workouts.html" data-ignore="push" class="button button-block">Manage Workouts</a>
-      <a class="button button-block">View Calendar</a>
-      <a class="button button-block">View Logs</a>
-    </div>
+    <ul class="list">
+        <li>
+          <a href="single-exercise.html" data-ignore="push">
+            <strong>Bench Press</strong>
+            <a class="button-negative">Remove</a>
+          </a>
+        </li>
+        <li>
+          <a href="single-exercise.html" data-ignore="push">
+            <strong>Skullcruchers</strong>
+            <a class="button-negative">Remove</a>
+          </a>
+        </li>        
+        <li>
+          <a href="single-exercise.html" data-ignore="push">
+            <strong>Decline Bench Press</strong>
+            <a class="button-negative">Remove</a>
+          </a>
+        </li>                
+        <li>
+          <a href="single-exercise.html" data-ignore="push">
+            <strong>Tricep Pushdown</strong>
+            <a class="button-negative">Remove</a>
+          </a>
+        </li>
+        <li>
+          <a href="single-exercise.html" data-ignore="push">
+            <strong>Close Grip Bench Press</strong>
+            <a class="button-negative">Remove</a>
+          </a>
+        </li>   
+      </ul>    
+      <div class="content-padded">
+        <a style="margin-bottom: 0;" href="#" data-ignore="push" class="button-positive button-block">Add Exercise</a>
+      </div>          
   </div>
-
   </body>
 </html>

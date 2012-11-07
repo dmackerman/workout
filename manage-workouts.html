@@ -32,6 +32,7 @@
         .welcome {
           line-height: 1.5;
           color: #555;
+          margin-bottom: 20px;
         }
     </style>
 
@@ -46,10 +47,37 @@
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
-    <div class="content-padded">
-      <p class="welcome">Manage workouts here. This is the same screen you get to from the home screen</p>
-      <p class="welcome">This is a pop-up over any existing screen, hence the close button.</p>
-    </div>
+    <ul class="list">
+      <li class="list-divider">Your Workouts [4]</li>
+      <li>
+        <a href="manage-single-workout.html" data-ignore="push">
+          <strong>Back / Biceps</strong>
+          <span class="count">4 EXERCISES</span>
+          <span class="chevron"></span>
+        </a>
+      </li>
+      <li>
+        <a href="manage-single-workout.html" data-ignore="push">
+          <strong>Chest / Triceps</strong>
+          <span class="count">7 EXERCISES</span>
+          <span class="chevron"></span>
+        </a>
+      </li>
+      <li>
+        <a href="manage-single-workout.html" data-ignore="push">
+          <strong>Shoulders / Back</strong>
+          <span class="count">3 EXERCISES</span>
+          <span class="chevron"></span>
+        </a>
+      </li>
+      <li>
+        <a href="manage-single-workout.html" data-ignore="push">
+          <strong>Abs / Cardio</strong>
+          <span class="count">5 EXERCISES</span>
+          <span class="chevron"></span>
+        </a>
+      </li>                         
+    </ul>    
   </div>
 
   </body>
