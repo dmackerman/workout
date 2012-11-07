@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ratchet template page</title>
+    <title>Workout App Prototype</title>
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -28,6 +28,8 @@
         .welcome {
           line-height: 1.5;
           color: #555;
+          margin-bottom: 10px;
+          font-size: 11px;
         }
     </style>
 
@@ -47,22 +49,43 @@
         <li>
           <a href="single-exercise.html" data-transition="slide-in">
             <strong>Bench Press</strong>
+            <span class="count">4</span>
             <span class="chevron"></span>
           </a>
         </li>
         <li>
           <a href="single-exercise.html" data-transition="slide-in">
+            <strong>Skullcruchers</strong>
+            <span class="count">0</span>
+            <span class="chevron"></span>
+          </a>
+        </li>        
+        <li>
+          <a href="single-exercise.html" data-transition="slide-in">
+            <strong>Decline Bench Press</strong>
+            <span class="count">0</span>
+            <span class="chevron"></span>
+          </a>
+        </li>                
+        <li>
+          <a href="single-exercise.html" data-transition="slide-in">
             <strong>Tricep Pushdown</strong>
+            <span class="count">0</span>
             <span class="chevron"></span>
           </a>
         </li>
         <li>
           <a href="single-exercise.html" data-transition="slide-in">
             <strong>Close Grip Bench Press</strong>
+            <span class="count">0</span>
             <span class="chevron"></span>
           </a>
-        </li>                
+        </li>   
       </ul>
+      <div class="content-padded">
+        <p class="welcome">Once you've finished all of your exercises and are happy with everything, push this:</p>
+        <a class="button-positive button-block">Complete Workout</a>                   
+      </div>
   </div>
 
   </body>
