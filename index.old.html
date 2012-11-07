@@ -22,6 +22,7 @@
 
     <!-- Include the compiled Ratchet JS -->
     <script src="ratchet.js"></script>
+    <script src="zepto.js"></script>
 
     <script type="text/javascript" src="//use.typekit.net/cta5lqr.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>    
@@ -39,59 +40,41 @@
 
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
-    <a class="button-prev" href="index.html" data-ignore="push">Back</a>    
-    <h1 class="title">Workout #1</h1>
+    <h1 class="title">Workout Tracker</h1>
   </header>
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
+    
       <ul class="list">
-        <li class="list-divider">Today is <strong>Monday</strong>, November 14th</li>
         <li>
-          <a href="#" data-ignore="push">
-            <strong class="disabled">Sunday</strong>
+          <a href="workouts.html" data-ignore="push">
+            <strong>Workout #1</strong>
             <span class="chevron"></span>
           </a>
         </li>
         <li>
-          <a href="single-workout.html" data-ignore="push">
-            <strong>Monday</strong>
-            <span class="count">TODAY</span>
+          <a href="workouts.html" data-ignore="push">
+            <strong>Hard Ass Workout</strong>
             <span class="chevron"></span>
           </a>
         </li>
-        <li>
-          <a href="">
-            <strong class="disabled">Tuesday</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>
-        <li>
-          <a href="single-workout-blank.html" data-ignore="push">
-            <strong>Wednesday</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <strong class="disabled">Thursday</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>
-        <li>
-          <a href="single-workout-blank.html" data-ignore="push">
-            <strong>Friday</strong>
-            <span class="chevron"></span>
-          </a>
-        </li> 
-        <li>
-          <a href="">
-            <strong class="disabled">Saturday</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>                             
-      </ul>
+      </ul>      
+
+      <div class="content-padded">
+        <a id="createNewWorkout" class="button-positive button-block">Create New Workout</a>
+        <a href="#" data-ignore="push" class="button button-block">View Logs</a>
+      </div>
   </div>
+
+  <script>
+    Zepto(function($){
+      $('#createNewWorkout').on('click', function(e) {
+        $('.list').append('<li style="padding:10px;"><input id="new" type="text" placeholder="name" /></li>');
+      })
+      $('#new').trigger('focus');
+    })
+  </script>
 
   </body>
 </html>
