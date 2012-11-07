@@ -41,10 +41,9 @@
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
-    <div class="content-padded">
-      <p class="welcome"><strong>Your workouts</strong></p>
-
-      <ul class="list inset">
+    
+      <ul class="list">
+        <li class="list-divider">Your Workouts</li>
         <li>
           <a href="workouts.html" data-transition="slide-in">
             <strong>Workout #1</strong>
@@ -59,8 +58,11 @@
         </li>
       </ul>      
 
-      <a href="new-workout.html" data-transition="fade" class="button-positive button-block">Create New Workout</a>
-    </div>
+      <div class="content-padded">
+        <a href="new-workout.html" data-transition="fade" class="button-positive button-block">Create New Workout</a>
+        <a href="#" data-transition="fade" class="button button-block">View Logs</a>
+      </div>
+
 
 
 

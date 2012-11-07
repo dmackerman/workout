@@ -36,33 +36,29 @@
 
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
-    <a class="button-prev" href="workouts.html" data-transition="slide-out">Back</a>    
-    <h1 class="title">Monday</h1>
-    <a class="button" href="#" data-transition="fade">Edit</a>  
+    <a class="button-prev" href="single-workout.html" data-transition="slide-out">Back</a>    
+    <h1 class="title">Bench Press</h1>
   </header>
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
       <ul class="list">
-        <li>
-          <a href="single-exercise.html" data-transition="slide-in">
-            <strong>Bench Press</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>
-        <li>
-          <a href="single-exercise.html" data-transition="slide-in">
-            <strong>Tricep Pushdown</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>
-        <li>
-          <a href="single-exercise.html" data-transition="slide-in">
-            <strong>Close Grip Bench Press</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>                
+        <li class="list-divider">Set #1</li>
       </ul>
+      <div class="content-padded">
+        <form>
+          <input type="number" placeholder="Enter reps">
+        </form>
+      </div>
+      <ul class="list">
+        <li class="list-divider">Set #2</li>
+      </ul>
+      <div class="content-padded">
+        <form>
+          <input type="number" placeholder="Enter reps">
+          <a class="button-main button-block">Add Set</a>
+        </form>
+      </div>      
   </div>
 
   </body>
