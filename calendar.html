@@ -40,53 +40,16 @@
 
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
-    <a class="button-prev" href="index.html" data-ignore="push">Home</a>    
-    <h1 class="title">My Workouts</h1>
-    <a class="button" href="manage-workouts.html" data-ignore="push">Manage</a>    
+    <a class="button-prev" href="index.html" data-ignore="push">Home</a>
+    <h1 class="title">Calendar</h1>
   </header>
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
-      <ul class="list">
-        <li class="list-divider">Today is <strong>Monday</strong>, November 14th</li>
-        <li>
-          <a class="workoutButton" href="single-workout.html" data-ignore="push">
-            <strong>Back / Biceps</strong>
-            <span class="count-main">TODAY</span>
-            <span class="chevron"></span>
-          </a>
-        </li>
-        <li>
-          <a class="workoutButton" href="single-workout.html" data-ignore="push">
-            <strong>Chest / Triceps</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>
-        <li>
-          <a class="workoutButton" href="single-workout.html">
-            <strong>Shoulders / Back</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>
-        <li>
-          <a class="workoutButton" href="single-workout.html" data-ignore="push">
-            <strong>Abs / Cardio</strong>
-            <span class="chevron"></span>
-          </a>
-        </li>                         
-      </ul>
+    <div class="content-padded">
+      <p class="welcome">This is the calendar. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+    </div>
   </div>
-
-  <script>
-    Zepto(function($){
-      $('.workoutButton').on('click', function(e) {
-        if (confirm("Start workout timer?"))
-          return true; 
-        else 
-          return false;
-      })
-    })
-  </script>
 
   </body>
 </html>

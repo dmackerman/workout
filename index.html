@@ -38,20 +38,21 @@
   </head>
   <body>
 
-  <!-- Make sure all your bars are the first things in your <body> -->
-  <header class="bar-title">
-    <h1 class="title">No Bullshit Tracker</h1>
-  </header>
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar-title">
+      <h1 class="title">No Bullshit Tracker</h1>
+      <a class="button" href="#" data-ignore="push"><embed src="gear.svg" fill="white" width="20" height="20" type="image/svg+xml" /></a>
+    </header>
 
-  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-  <div class="content">
-    <div class="content-padded">
-      <a href="workouts.html" data-ignore="push" class="button-main button-block">Workout</a>
-      <a href="manage-workouts.html" data-ignore="push" class="button button-block">Manage Workouts</a>
-      <a class="button button-block">View Calendar</a>
-      <a class="button button-block">View Logs</a>
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+      <div class="content-padded">
+        <a id="workoutButton" href="workouts.html" data-ignore="push" class="button-main button-block">Workout!</a>
+        <a href="manage-workouts.html" data-ignore="push" class="button button-block">Manage Workouts</a>
+        <a href="calendar.html" data-ignore="push" class="button button-block">View Calendar</a>
+        <a href="logs.html" data-ignore="push" class="button button-block">View Logs</a>
+      </div>
     </div>
-  </div>
 
   </body>
 </html>
